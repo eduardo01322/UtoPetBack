@@ -28,9 +28,9 @@ class AnimaisFormRequest extends FormRequest
             'idade'=>'required|max:20|min:1',
             'sexo' => 'required|max:10|min:1',
             'raca' => 'required|max:100|min:1',
-            'descricao' => 'required|max:255|min:5',
+            'descricao' => 'required|max:255|min:1',
             'vacina'=>'required|max:50|min:1',
-            'castração'=>'required|max:50|min:5',
+            'castração'=>'required|max:50|min:1',
         ];
     }
 
@@ -62,15 +62,15 @@ class AnimaisFormRequest extends FormRequest
             
             'descricao.required' => 'descricao do pet obrigátorio',
             'descricao.max' => 'O campo descricao deve ter no máximo 255 caractéris',
-            'descricao.min' => 'O campo descricao deve ter no mínimo 3 caractéris',
+            'descricao.min' => 'O campo descricao deve ter no mínimo 1 caractéris',
      
             'vacina.required' => 'vacina do pet obrigátorio',
             'vacina.max' => 'O campo vacina deve ter no máximo 50 caractéris',
-            'vacina.min' => 'O campo vacina deve ter no mínimo 3 caractéris',
+            'vacina.min' => 'O campo vacina deve ter no mínimo 1 caractéris',
             
             'castração.required' => 'castração do pet obrigátorio',
             'castração.max' => 'O campo castração deve ter no máximo 50 caractéris',
-            'castração.min' => 'O campo castração deve ter no mínimo 5 caractéris',
+            'castração.min' => 'O campo castração deve ter no mínimo 1 caractéris',
         ];
     }
 }
