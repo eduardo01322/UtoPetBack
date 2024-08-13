@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('raca',100)->nullable(false);
             $table->string('descricao',255)->nullable(false);
             $table->string('vacina',50)->nullable(false);
-            $table->string('castração',50)->nullable(false);
+            $table->string('castracao',50)->nullable(false);
             $table->timestamps();
         });
     }

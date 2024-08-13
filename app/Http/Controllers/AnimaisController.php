@@ -17,7 +17,7 @@ class AnimaisController extends Controller
             'raca' => $request->raca,
             'descricao' => $request->descricao,
             'vacina' => $request->vacina,
-            'castração' => $request->castração
+            'castracao' => $request->castracao
         ]);
         return response()->json([
             "success" => true,
@@ -134,8 +134,8 @@ class AnimaisController extends Controller
             $animais->vacina = $request->vacina;
         }
         
-        if(isset($request->castração)){
-            $animais->castração = $request->castração;
+        if(isset($request->castracao)){
+            $animais->castracao = $request->castracao;
         }
 
         $animais->update();

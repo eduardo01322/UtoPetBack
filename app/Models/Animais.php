@@ -17,6 +17,6 @@ class Animais extends Model
         'raca',
         'descricao',
         'vacina',
-        'castração'
+        'castracao'
     ];
 }
